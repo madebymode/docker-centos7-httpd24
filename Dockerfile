@@ -9,9 +9,5 @@ RUN mkdir -p /etc/httpd/conf.d/vhosts
 ADD php-fpm.conf /etc/httpd/conf.d/
 ADD mounted-vhosts.conf /etc/httpd/conf.d/
 
-# Update and install latest packages and prerequisites
-RUN yum update -y \
-    && yum clean all && yum history new
-    
 EXPOSE 80
 EXPOSE 443
