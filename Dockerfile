@@ -1,4 +1,4 @@
-FROM centos/httpd
+FROM arm64v8/httpd
 MAINTAINER madebymode
 
 # default values to connect to php-fpm
